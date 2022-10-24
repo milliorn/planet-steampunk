@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Steampunk</title>
+  </head>
+
+  <body>
+    <canvas id="canvas1"></canvas>
+
+    <img id="angler1" src="./assets/enemies/angler1.png" />
+    <img id="angler2" src="./assets/enemies/angler2.png" />
+    <img id="drone" src="./assets/enemies/drone.png" />
+    <img id="hiveWhale" src="./assets/enemies/hivewhale.png" />
+
+    <img id="fireExplosion" src="./assets/collisions//fireExplosion.png" />
+    <img id="smokeExplosion" src="./assets/collisions//smokeExplosion.png" />
+
+    <img id="gears" src="./assets/misc/gears.png" />
+    <img id="player" src="./assets/misc/player.png" />
+    <img id="projectile" src="./assets/misc/projectile.png" />
+
+    <img id="layer1" src="./assets/backgrounds/layer1.png" />
+    <img id="layer2" src="assets/backgrounds/layer2.png" />
+    <img id="layer3" src="assets/backgrounds/layer3.png" />
+    <img id="layer4" src="assets/backgrounds/layer4.png" />
+    <img id="lucky" src="./assets/enemies/lucky.png" />
+
+    <script type="module" src="js/angler1.js"></script>
+    <script type="module" src="js/angler2.js"></script>
+    <script type="module" src="js/background.js"></script>
+    <script type="module" src="js/drone.js"></script>
+    <script type="module" src="js/enemy.js"></script>
+    <script type="module" src="js/explosion.js"></script>
+    <script type="module" src="js/fireExplosion.js"></script>
+    <script type="module" src="js/game.js"></script>
+    <script type="module" src="js/hiveWhale.js"></script>
+    <script type="module" src="js/inputHandler.js"></script>
+    <script type="module" src="js/layer.js"></script>
+    <script type="module" src="js/lucky.js"></script>
+    <script type="module" src="js/particle.js"></script>
+    <script type="module" src="js/player.js"></script>
+    <script type="module" src="js/projectile.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/smokeExplosion.js"></script>
+    <script type="module" src="js/ui.js"></script>
+  </body>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+    html { overflow-y: hidden; }
+
+    body {
+      background-color: black;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #canvas1 {
+      background: #4d79bc;
+      border: 5px solid black;
+      font-family: "Bangers", cursive;
+      left: 50%;
+      max-height: 100%;
+      max-width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #angler1,
+    #angler2,
+    #drone,
+    #fireExplosion,
+    #gears,
+    #hiveWhale,
+    #layer1,
+    #layer2,
+    #layer3,
+    #layer4,
+    #lucky,
+    #player,
+    #projectile,
+    #smokeExplosion,
+    #fireExplosion {
+      display: none;
+    }
+  </style>
+</html>
