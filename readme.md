@@ -4,4 +4,4 @@ freeCodeCamp -> <https://www.youtube.com/watch?v=7BHs1BzA4fs&t=0s>
 
 Frank's Laboratory Youtube -> https://www.youtube.com/c/Frankslaboratory
 
-Frank's Laboratory -> https://twitter.com/code_laboratory
+Frank's Laboratory Twitter -> https://twitter.com/code_laboratory
