@@ -4,9 +4,10 @@ export default class InputHandler {
 
     window.addEventListener("keydown", (e) => {
       //console.log(e.key);
+
       if (
-        e.key == "ArrowUp" ||
-        (e.key == "ArrowDown" && this.game.keys.indexOf(e.key) === -1)
+        (e.key === "ArrowUp" || e.key === "ArrowDown") &&
+        this.game.keys.indexOf(e.key) === -1
       ) {
         this.game.keys.push(e.key);
       } else if (e.key === " ") {
