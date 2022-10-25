@@ -31,8 +31,11 @@ export default class Player {
     this.y += this.speedY;
 
     /* handle boundaries on player */
-    if(this.y > this.game.height - this.height * 0.5) this.y = this.game.height - this.height - this.height * 0.5;
-    else if (this.y < -this.height * 0.5) this.y = -this.height * 0.5
+    if (this.y > this.game.height - this.height * 0.5)
+      this.y = this.game.height - this.height * 0.5;
+    else if (this.y < -this.height * 0.5) this.y = -this.height * 0.5;
+
+    //console.log(this.y);
 
     /* handle projectiles */
     this.projectiles.forEach((projectile) => {
